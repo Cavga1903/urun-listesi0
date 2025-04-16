@@ -1,0 +1,97 @@
+/* Genel stil */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+/* Grid ve Kart Yapısı */
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #111827;
+  min-height: 48px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 4px 0;
+}
+
+.price {
+  color: #10b981;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Mobil uyumlu başlık ve butonlar */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+}

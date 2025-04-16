@@ -61,6 +61,19 @@ urun-listesi0/
 └── vite.config.js
 ```
 
+> 🗂️ **Not:** `node_modules` klasörü bu projede **bilerek GitHub'a yüklenmemiştir**.
+> 
+> 📁 Bu klasör `.gitignore` dosyasıyla dışlanmıştır. Çünkü:
+> 
+> 1. `node_modules`, binlerce dosya içerdiği için çok yer kaplar.
+> 2. Her projede farklı makinelerde yeniden kurulabilir.
+> 3. Zaten `package.json` ve `package-lock.json` dosyaları, gereken paketleri tanımlar.
+> 4. Projeyi çalıştırmak isteyen kişi sadece şu komutu yazarak eksik paketleri yükleyebilir:
+> 
+> ```bash
+> npm install
+> ```
+
 ## 🚀 Projeyi Başlatma
 
 ```bash
@@ -68,3 +81,4 @@ npm run dev
 ```
 
 - Vite ile geliştirildiği için uygulama genellikle <http://localhost:5173> adresinde çalışır.
+
